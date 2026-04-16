@@ -58,13 +58,6 @@ A machine learning-based smart traffic light control system that dynamically adj
 
 ---
 
-## 🚀 Future Improvements
-
-* Model deployment with API Gateway
-* Real-time dashboard visualization
-* Deep learning approach (LSTM / time-series)
-
----
 
 ## 👤 Author
 
