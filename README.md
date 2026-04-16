@@ -1,39 +1,71 @@
-# 🚦 Smart Traffic Control System (ML-Based)
+# 🚦 Smart Traffic Control System (ML + AWS + IoT)
 
-This project implements a machine learning-based smart traffic control system using AWS services.
+A machine learning-based smart traffic light control system that dynamically adjusts green light duration using real-time traffic data.
 
-## 🔧 Features
+---
 
-* Data preprocessing from raw traffic data (AWS S3)
-* Machine Learning models:
+## 🧠 Key Features
+
+* Automated data preprocessing from AWS S3
+* Machine learning models:
 
   * Linear Regression
   * Random Forest
-* Real-time inference for traffic light optimization
-* Integration with AWS IoT for live control
+* Real-time inference using AWS Lambda
+* IoT integration for traffic light control
+* Hybrid decision system (real + predicted speed)
 
-## 🧠 Architecture
+---
 
-1. Raw data stored in S3
-2. Preprocessing using AWS Lambda
+## 🏗️ System Architecture
+
+1. Raw traffic data stored in AWS S3
+2. Data cleaning using Lambda (preprocessing)
 3. Model training (LR & RF)
 4. Real-time inference
-5. Publish result to IoT device
+5. Publish decision to IoT device
+
+---
 
 ## 📁 Project Structure
 
-* `preprocessing/` → data cleaning
+* `preprocessing/` → data cleaning pipeline
 * `training/` → ML model training
-* `inference/` → real-time prediction
+* `inference/` → real-time prediction & IoT publishing
+
+---
 
 ## ⚙️ Tech Stack
 
 * Python
 * AWS Lambda
 * AWS S3
-* AWS IoT
+* AWS IoT Core
 * Scikit-learn
 
-## 🚀 Author
+---
+
+## 📊 Machine Learning
+
+* Features:
+
+  * distance_m
+  * duration_s
+  * duration_in_traffic_s
+* Target:
+
+  * speed_kmh
+
+---
+
+## 🚀 Future Improvements
+
+* Model deployment with API Gateway
+* Real-time dashboard visualization
+* Deep learning approach (LSTM / time-series)
+
+---
+
+## 👤 Author
 
 Nabil Raditya
