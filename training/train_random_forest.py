@@ -1,4 +1,4 @@
-KODE TRAIN RANDOM FOREST
+# CODE TRAIN RANDOM FOREST
 
 import boto3
 import numpy as np
