@@ -1,4 +1,4 @@
-KODE TRAIN LR
+# CODE TRAIN LR
 
 import boto3
 import pandas as pd
