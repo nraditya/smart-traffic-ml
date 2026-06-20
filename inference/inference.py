@@ -1,4 +1,4 @@
-SMART TRAFFIC INFERENCE
+# SMART TRAFFIC INFERENCE
 
 import boto3
 import os
